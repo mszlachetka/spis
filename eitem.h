@@ -10,6 +10,7 @@ public:
     QString nazwa;
     double ilosc;
     QString typ;
+    QIcon mIcon;
 
 };
 

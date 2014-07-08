@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>183</width>
+    <width>228</width>
     <height>133</height>
    </rect>
   </property>
@@ -56,6 +56,45 @@
      </item>
      <item row="0" column="1">
       <widget class="QComboBox" name="comboBox">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="maxVisibleItems">
+        <number>15</number>
+       </property>
+       <property name="insertPolicy">
+        <enum>QComboBox::InsertAlphabetically</enum>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+       </property>
+       <item>
+        <property name="text">
+         <string>dioda IR</string>
+        </property>
+        <property name="icon">
+         <iconset resource="images/images.qrc">
+          <normaloff>:/images/dioda_ir.png</normaloff>:/images/dioda_ir.png</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>dioda LED</string>
+        </property>
+        <property name="icon">
+         <iconset resource="images/images.qrc">
+          <normaloff>:/images/dioda_led.png</normaloff>:/images/dioda_led.png</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>kondensator</string>
+        </property>
+        <property name="icon">
+         <iconset resource="images/images.qrc">
+          <normaloff>:/images/kondesator.png</normaloff>:/images/kondesator.png</iconset>
+        </property>
+       </item>
        <item>
         <property name="text">
          <string>rezystor</string>
@@ -63,6 +102,24 @@
         <property name="icon">
          <iconset resource="images/images.qrc">
           <normaloff>:/images/rezystor.png</normaloff>:/images/rezystor.png</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>serwomechanizm</string>
+        </property>
+        <property name="icon">
+         <iconset resource="images/images.qrc">
+          <normaloff>:/images/serwomechanizm.png</normaloff>:/images/serwomechanizm.png</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>tranzystor</string>
+        </property>
+        <property name="icon">
+         <iconset resource="images/images.qrc">
+          <normaloff>:/images/tranzystor_bipolarny.png</normaloff>:/images/tranzystor_bipolarny.png</iconset>
         </property>
        </item>
        <item>
@@ -76,11 +133,11 @@
        </item>
        <item>
         <property name="text">
-         <string>kondensator</string>
+         <string>wyświetlacz</string>
         </property>
         <property name="icon">
          <iconset resource="images/images.qrc">
-          <normaloff>:/images/kondesator.png</normaloff>:/images/kondesator.png</iconset>
+          <normaloff>:/images/wyswietlacz.png</normaloff>:/images/wyswietlacz.png</iconset>
         </property>
        </item>
       </widget>

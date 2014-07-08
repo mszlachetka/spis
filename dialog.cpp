@@ -13,6 +13,7 @@ Dialog::Dialog(QWidget *parent) :
     ui->setupUi(this);
     setWindowTitle("DODAJ ELEMENT");
 
+
 }
 
 Dialog::~Dialog()

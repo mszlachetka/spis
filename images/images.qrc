@@ -3,5 +3,10 @@
         <file>kondesator.png</file>
         <file>rezystor.png</file>
         <file>scalony.png</file>
+        <file>dioda_ir.png</file>
+        <file>dioda_led.png</file>
+        <file>serwomechanizm.png</file>
+        <file>tranzystor_bipolarny.png</file>
+        <file>wyswietlacz.png</file>
     </qresource>
 </RCC>

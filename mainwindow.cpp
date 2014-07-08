@@ -33,14 +33,19 @@ void MainWindow::onNewTextEntered(const QString &text,const double &ammount,cons
     przedmiot->nazwa=text;
     przedmiot->ilosc=ammount;
     przedmiot->typ=typ;
+    przedmiot->mIcon=mIcon;
     Eitm_vect.push_back(przedmiot);
     if(Eitm_vect.size()<10) ui->listWidget->setMinimumHeight((Eitm_vect.size()+1)*19);
-     przedmiot->nazwa+ " "+QString::number(przedmiot->ilosc)+" "+przedmiot->typ;
+    ui->listWidget->clear();
+    for(int i=0;i<Eitm_vect.size();i++)
+    {
+    Eitm_vect.at(i)->nazwa+ " "+QString::number(Eitm_vect.at(i)->ilosc)+" "+Eitm_vect.at(i)->typ;
 
      QListWidgetItem *itm=new QListWidgetItem(mIcon
-                          ,przedmiot->nazwa+ " "+QString::number(przedmiot->ilosc)+" "+przedmiot->typ,0,0);
+                          ,"[ "+Eitm_vect.at(i)->typ+ " ][ "+Eitm_vect.at(i)->nazwa+" ][ "+QString::number(Eitm_vect.at(i)->ilosc)+" ]",0,0);
     ui->listWidget->addItem(itm);
     ui->listWidget->setSizePolicy(QSizePolicy::Ignored,QSizePolicy::Ignored);
+    }
 
 }
 
@@ -72,4 +77,34 @@ void MainWindow::on_listWidget_currentItemChanged(QListWidgetItem *current, QLis
 {
     if(current!=NULL) current->setBackgroundColor(Qt::green);
    if(previous!=NULL) previous->setBackgroundColor(Qt::white);
+}
+
+void MainWindow::on_pushButton_3_clicked()
+{
+   QApplication::quit();
+}
+
+void MainWindow::on_lineEdit_returnPressed()
+{
+    ui->listWidget->clear();
+    QString check;
+    for(int i=0;i<Eitm_vect.size();i++)
+    {
+         check=Eitm_vect.at(i)->nazwa+ " "+QString::number(Eitm_vect.at(i)->ilosc)+" "+Eitm_vect.at(i)->typ;
+        if(check.contains(ui->lineEdit->text()))
+        {
+                QListWidgetItem *itm=new QListWidgetItem(Eitm_vect.at(i)->mIcon
+                                     ,"[ "+Eitm_vect.at(i)->typ+ " ][ "+Eitm_vect.at(i)->nazwa+" ][ "+QString::number(Eitm_vect.at(i)->ilosc)+" ]",0,0);
+               ui->listWidget->addItem(itm);
+               ui->listWidget->setSizePolicy(QSizePolicy::Ignored,QSizePolicy::Ignored);
+        }
+    }
+
+
+ }
+
+
+void MainWindow::on_actionO_Qt_triggered()
+{
+    QApplication::aboutQt();
 }

@@ -26,3 +26,5 @@ FORMS    += mainwindow.ui \
 
 RESOURCES += \
     images/images.qrc
+
+OTHER_FILES +=
