@@ -97,6 +97,15 @@
        </item>
        <item>
         <property name="text">
+         <string>potencjometr</string>
+        </property>
+        <property name="icon">
+         <iconset resource="images/images.qrc">
+          <normaloff>:/images/potencjometr.png</normaloff>:/images/potencjometr.png</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
          <string>rezystor</string>
         </property>
         <property name="icon">

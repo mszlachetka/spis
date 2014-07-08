@@ -8,5 +8,6 @@
         <file>serwomechanizm.png</file>
         <file>tranzystor_bipolarny.png</file>
         <file>wyswietlacz.png</file>
+        <file>potencjometr.png</file>
     </qresource>
 </RCC>

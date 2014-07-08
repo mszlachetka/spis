@@ -85,6 +85,8 @@
      </widget>
     </item>
    </layout>
+   <zorder>pushButton_3</zorder>
+   <zorder>listWidget</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">

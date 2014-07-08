@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Spis Tytul="ELEKTRONIKA">
+	<przedmiot typ="układ scalony" ilosc="5" nazwa="ATmega8" />
+	<przedmiot typ="tranzystor" ilosc="10" nazwa="BC547B NPN" />
+	<przedmiot typ="układ scalony" ilosc="5" nazwa="74LS00 NAND" />
+	<przedmiot typ="serwomechanizm" ilosc="2" nazwa="TowerPRO SG-5010" />
+	<przedmiot typ="potencjometr" ilosc="10" nazwa="100k" />
+	<przedmiot typ="potencjometr" ilosc="10" nazwa="500R" />
+	<przedmiot typ="potencjometr" ilosc="10" nazwa="5K" />
+</Spis>

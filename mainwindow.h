@@ -26,18 +26,15 @@ private slots:
 
     void on_pushButton_2_clicked();
 
-
-
-
-
-
     void on_listWidget_currentItemChanged(QListWidgetItem *current, QListWidgetItem *previous);
 
     void on_pushButton_3_clicked();
 
-    void on_lineEdit_returnPressed();
+
 
     void on_actionO_Qt_triggered();
+
+    void on_lineEdit_textChanged(const QString);
 
 public slots:
     void onNewTextEntered(const QString &text,const double &ammount, const QString &typ,const QIcon &mIcon);

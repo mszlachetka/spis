@@ -15,11 +15,14 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     eitem.cpp \
-    dialog.cpp
+    dialog.cpp \
+    pugixml.cpp
 
 HEADERS  += mainwindow.h \
     eitem.h \
-    dialog.h
+    dialog.h \
+    pugiconfig.hpp \
+    pugixml.hpp
 
 FORMS    += mainwindow.ui \
     dialog.ui
