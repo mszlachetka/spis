@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>kondesator.png</file>
+        <file>rezystor.png</file>
+        <file>scalony.png</file>
+    </qresource>
+</RCC>

@@ -23,7 +23,7 @@ private slots:
     void on_buttonBox_accepted();
 
 signals:
-    void newTextEntered(const QString &text, const double &ammount);
+    void newTextEntered(const QString &text, const double &ammount, const QString &typ,const QIcon &mIcon);
 
 
 private:

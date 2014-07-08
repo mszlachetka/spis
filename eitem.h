@@ -9,7 +9,7 @@ public:
     eitem();
     QString nazwa;
     double ilosc;
-    QListWidgetItem itm;
+    QString typ;
 
 };
 
