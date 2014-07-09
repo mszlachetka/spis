@@ -70,6 +70,24 @@
        </property>
        <item>
         <property name="text">
+         <string>akcesoria</string>
+        </property>
+        <property name="icon">
+         <iconset resource="images/images.qrc">
+          <normaloff>:/images/akcesoria.jpg</normaloff>:/images/akcesoria.jpg</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>czujnik</string>
+        </property>
+        <property name="icon">
+         <iconset resource="images/images.qrc">
+          <normaloff>:/images/czujnik.jpg</normaloff>:/images/czujnik.jpg</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
          <string>dioda IR</string>
         </property>
         <property name="icon">
@@ -93,6 +111,15 @@
         <property name="icon">
          <iconset resource="images/images.qrc">
           <normaloff>:/images/kondesator.png</normaloff>:/images/kondesator.png</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>komunikacja</string>
+        </property>
+        <property name="icon">
+         <iconset resource="images/images.qrc">
+          <normaloff>:/images/komunikacja.jpg</normaloff>:/images/komunikacja.jpg</iconset>
         </property>
        </item>
        <item>

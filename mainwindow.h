@@ -41,6 +41,7 @@ public slots:
 private:
     Ui::MainWindow *ui;
     Dialog *mDialog;
+    int nrglobal=1;
 signals:
 
 };

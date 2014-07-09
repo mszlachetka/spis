@@ -9,5 +9,8 @@
         <file>tranzystor_bipolarny.png</file>
         <file>wyswietlacz.png</file>
         <file>potencjometr.png</file>
+        <file>akcesoria.jpg</file>
+        <file>czujnik.jpg</file>
+        <file>komunikacja.jpg</file>
     </qresource>
 </RCC>

@@ -54,7 +54,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(275, 383);
+        MainWindow->resize(275, 244);
         actionO_Qt = new QAction(MainWindow);
         actionO_Qt->setObjectName(QStringLiteral("actionO_Qt"));
         centralWidget = new QWidget(MainWindow);
@@ -147,7 +147,7 @@ public:
         pushButton->setText(QApplication::translate("MainWindow", "Dodaj", 0));
         pushButton_2->setText(QApplication::translate("MainWindow", "Usun", 0));
         label->setText(QApplication::translate("MainWindow", "Wyszukaj", 0));
-        pushButton_3->setText(QApplication::translate("MainWindow", "Zako\305\204cz", 0));
+        pushButton_3->setText(QApplication::translate("MainWindow", "Zapisz/Zako\305\204cz", 0));
         menuAbout_Qt->setTitle(QApplication::translate("MainWindow", "HELP", 0));
     } // retranslateUi
 

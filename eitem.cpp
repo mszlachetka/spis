@@ -2,4 +2,5 @@
 
 eitem::eitem()
 {
+    nrporz=0;
 }

@@ -46,11 +46,13 @@ MainWindow::MainWindow(QWidget *parent) :
             for(int i=0;i<Eitm_vect.size();i++)
             {
             Eitm_vect.at(i)->nazwa+ " "+QString::number(Eitm_vect.at(i)->ilosc)+" "+Eitm_vect.at(i)->typ;
-
+            Eitm_vect.at(i)->nrporz=nrglobal;
              QListWidgetItem *itm=new QListWidgetItem(Eitm_vect.at(i)->mIcon
-                                  ,"[ "+Eitm_vect.at(i)->typ+ " ][ "+Eitm_vect.at(i)->nazwa+" ][ "+QString::number(Eitm_vect.at(i)->ilosc)+" ]",0,0);
+                                  ,QString::number(Eitm_vect.at(i)->nrporz)+"[ "+Eitm_vect.at(i)->typ+ " ][ "+Eitm_vect.at(i)->nazwa+" ][ "+QString::number(Eitm_vect.at(i)->ilosc)+" ]",0,0);
+
             ui->listWidget->addItem(itm);
             ui->listWidget->setSizePolicy(QSizePolicy::Ignored,QSizePolicy::Ignored);
+            nrglobal++;
             }
             ui->listWidget->show();
             }
@@ -76,7 +78,7 @@ void MainWindow::on_pushButton_clicked()
 void MainWindow::onNewTextEntered(const QString &text,const double &ammount,const QString &typ,const QIcon &mIcon)
 {
     eitem *przedmiot= new eitem;
-
+    nrglobal=1;
     przedmiot->nazwa=text;
     przedmiot->ilosc=ammount;
     przedmiot->typ=typ;
@@ -87,29 +89,44 @@ void MainWindow::onNewTextEntered(const QString &text,const double &ammount,cons
     for(int i=0;i<Eitm_vect.size();i++)
     {
     Eitm_vect.at(i)->nazwa+ " "+QString::number(Eitm_vect.at(i)->ilosc)+" "+Eitm_vect.at(i)->typ;
+    Eitm_vect.at(i)->nrporz=nrglobal;
 
      QListWidgetItem *itm=new QListWidgetItem(Eitm_vect.at(i)->mIcon
-                          ,"[ "+Eitm_vect.at(i)->typ+ " ][ "+Eitm_vect.at(i)->nazwa+" ][ "+QString::number(Eitm_vect.at(i)->ilosc)+" ]",0,0);
+                          ,QString::number(Eitm_vect.at(i)->nrporz)+"[ "+Eitm_vect.at(i)->typ+ " ][ "+Eitm_vect.at(i)->nazwa+" ][ "+QString::number(Eitm_vect.at(i)->ilosc)+" ]",0,0);
     ui->listWidget->addItem(itm);
     ui->listWidget->setSizePolicy(QSizePolicy::Ignored,QSizePolicy::Ignored);
+    nrglobal++;
     }
 
 }
-
 void MainWindow::on_pushButton_2_clicked()
 {
 
     if(!Eitm_vect.isEmpty() && ui->listWidget->isItemSelected(ui->listWidget->currentItem()))
     {
-        if(Eitm_vect.size()>=1)Eitm_vect.removeAt(ui->listWidget->currentRow());
-     ui->listWidget->takeItem(ui->listWidget->currentRow());
 
+   if(Eitm_vect.size()>=1 &&ui->listWidget->currentItem()->text().at(0).digitValue()!=Eitm_vect.size()) Eitm_vect.remove(ui->listWidget->currentItem()->text().at(0).digitValue()-1);
+    else if(ui->listWidget->currentItem()->text().at(0).digitValue()==Eitm_vect.size()) Eitm_vect.removeLast();
     ui->listWidget->setMinimumHeight((Eitm_vect.size()+1)*19);
     ui->listWidget->setMaximumHeight((Eitm_vect.size()+1)*19);
+
+
+    nrglobal=1;
+
+    ui->listWidget->clear();
+    for(int i=0;i<Eitm_vect.size();i++)
+    {
+
+    Eitm_vect.at(i)->nazwa+ " "+QString::number(Eitm_vect.at(i)->ilosc)+" "+Eitm_vect.at(i)->typ;
+    Eitm_vect.at(i)->nrporz=nrglobal;
+     QListWidgetItem *itm=new QListWidgetItem(Eitm_vect.at(i)->mIcon
+                          ,QString::number(Eitm_vect.at(i)->nrporz)+"[ "+Eitm_vect.at(i)->typ+ " ][ "+Eitm_vect.at(i)->nazwa+" ][ "+QString::number(Eitm_vect.at(i)->ilosc)+" ]",0,0);
+
+    ui->listWidget->addItem(itm);
+    ui->listWidget->setSizePolicy(QSizePolicy::Ignored,QSizePolicy::Ignored);
+    nrglobal++;
     }
-
-
-
+}
 
 
 }
@@ -159,14 +176,16 @@ void MainWindow::on_actionO_Qt_triggered()
 void MainWindow::on_lineEdit_textChanged(const QString )
 {
     ui->listWidget->clear();
+    nrglobal=1;
     QString check;
     for(int i=0;i<Eitm_vect.size();i++)
     {
          check=Eitm_vect.at(i)->nazwa+ " "+QString::number(Eitm_vect.at(i)->ilosc)+" "+Eitm_vect.at(i)->typ;
         if(check.contains(ui->lineEdit->text()))
         {
+
                 QListWidgetItem *itm=new QListWidgetItem(Eitm_vect.at(i)->mIcon
-                                     ,"[ "+Eitm_vect.at(i)->typ+ " ][ "+Eitm_vect.at(i)->nazwa+" ][ "+QString::number(Eitm_vect.at(i)->ilosc)+" ]",0,0);
+                                     ,QString::number(Eitm_vect.at(i)->nrporz)+"[ "+Eitm_vect.at(i)->typ+ " ][ "+Eitm_vect.at(i)->nazwa+" ][ "+QString::number(Eitm_vect.at(i)->ilosc)+" ]",0,0);
                ui->listWidget->addItem(itm);
                ui->listWidget->setSizePolicy(QSizePolicy::Ignored,QSizePolicy::Ignored);
         }
