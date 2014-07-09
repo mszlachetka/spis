@@ -45,6 +45,9 @@ public:
     QLineEdit *lineEdit;
     QListWidget *listWidget;
     QSpacerItem *verticalSpacer;
+    QHBoxLayout *horizontalLayout_2;
+    QPushButton *pushButton_4;
+    QPushButton *pushButton_5;
     QPushButton *pushButton_3;
     QMenuBar *menuBar;
     QMenu *menuAbout_Qt;
@@ -54,7 +57,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(275, 244);
+        MainWindow->resize(296, 326);
         actionO_Qt = new QAction(MainWindow);
         actionO_Qt->setObjectName(QStringLiteral("actionO_Qt"));
         centralWidget = new QWidget(MainWindow);
@@ -103,25 +106,44 @@ public:
 
         listWidget = new QListWidget(centralWidget);
         listWidget->setObjectName(QStringLiteral("listWidget"));
-        listWidget->setMaximumSize(QSize(256, 21));
+        listWidget->setEnabled(true);
+        listWidget->setMaximumSize(QSize(280, 21));
 
         gridLayout->addWidget(listWidget, 1, 0, 1, 1);
 
-        verticalSpacer = new QSpacerItem(20, 175, QSizePolicy::Minimum, QSizePolicy::Expanding);
+        verticalSpacer = new QSpacerItem(275, 118, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
         gridLayout->addItem(verticalSpacer, 2, 0, 1, 1);
+
+        horizontalLayout_2 = new QHBoxLayout();
+        horizontalLayout_2->setSpacing(6);
+        horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
+        pushButton_4 = new QPushButton(centralWidget);
+        pushButton_4->setObjectName(QStringLiteral("pushButton_4"));
+
+        horizontalLayout_2->addWidget(pushButton_4);
+
+        pushButton_5 = new QPushButton(centralWidget);
+        pushButton_5->setObjectName(QStringLiteral("pushButton_5"));
+
+        horizontalLayout_2->addWidget(pushButton_5);
 
         pushButton_3 = new QPushButton(centralWidget);
         pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
 
-        gridLayout->addWidget(pushButton_3, 3, 0, 1, 1);
+        horizontalLayout_2->addWidget(pushButton_3);
+
+
+        gridLayout->addLayout(horizontalLayout_2, 3, 0, 1, 1);
 
         MainWindow->setCentralWidget(centralWidget);
         pushButton_3->raise();
         listWidget->raise();
+        pushButton_4->raise();
+        pushButton_5->raise();
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 275, 21));
+        menuBar->setGeometry(QRect(0, 0, 296, 21));
         menuAbout_Qt = new QMenu(menuBar);
         menuAbout_Qt->setObjectName(QStringLiteral("menuAbout_Qt"));
         MainWindow->setMenuBar(menuBar);
@@ -147,6 +169,8 @@ public:
         pushButton->setText(QApplication::translate("MainWindow", "Dodaj", 0));
         pushButton_2->setText(QApplication::translate("MainWindow", "Usun", 0));
         label->setText(QApplication::translate("MainWindow", "Wyszukaj", 0));
+        pushButton_4->setText(QApplication::translate("MainWindow", "+", 0));
+        pushButton_5->setText(QApplication::translate("MainWindow", "-", 0));
         pushButton_3->setText(QApplication::translate("MainWindow", "Zapisz/Zako\305\204cz", 0));
         menuAbout_Qt->setTitle(QApplication::translate("MainWindow", "HELP", 0));
     } // retranslateUi

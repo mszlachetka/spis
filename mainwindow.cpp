@@ -40,24 +40,9 @@ MainWindow::MainWindow(QWidget *parent) :
                teitm->nazwa=przed.attribute("nazwa").value();
                teitm->typ=przed.attribute("typ").value();
             Eitm_vect.push_back(teitm);
-            }
-            if(Eitm_vect.size()<10) ui->listWidget->setMinimumHeight((Eitm_vect.size())*19);
-            ui->listWidget->clear();
-            for(int i=0;i<Eitm_vect.size();i++)
-            {
-            Eitm_vect.at(i)->nazwa+ " "+QString::number(Eitm_vect.at(i)->ilosc)+" "+Eitm_vect.at(i)->typ;
-            Eitm_vect.at(i)->nrporz=nrglobal;
-             QListWidgetItem *itm=new QListWidgetItem(Eitm_vect.at(i)->mIcon
-                                  ,QString::number(Eitm_vect.at(i)->nrporz)+"[ "+Eitm_vect.at(i)->typ+ " ][ "+Eitm_vect.at(i)->nazwa+" ][ "+QString::number(Eitm_vect.at(i)->ilosc)+" ]",0,0);
-
-            ui->listWidget->addItem(itm);
-            ui->listWidget->setSizePolicy(QSizePolicy::Ignored,QSizePolicy::Ignored);
-            nrglobal++;
-            }
-            ui->listWidget->show();
-            }
-
-
+           addItem(0);
+}
+}
 }
 
 MainWindow::~MainWindow()
@@ -84,19 +69,8 @@ void MainWindow::onNewTextEntered(const QString &text,const double &ammount,cons
     przedmiot->typ=typ;
     przedmiot->mIcon=mIcon;
     Eitm_vect.push_back(przedmiot);
-    if(Eitm_vect.size()<10) ui->listWidget->setMinimumHeight((Eitm_vect.size()+1)*19);
-    ui->listWidget->clear();
-    for(int i=0;i<Eitm_vect.size();i++)
-    {
-    Eitm_vect.at(i)->nazwa+ " "+QString::number(Eitm_vect.at(i)->ilosc)+" "+Eitm_vect.at(i)->typ;
-    Eitm_vect.at(i)->nrporz=nrglobal;
-
-     QListWidgetItem *itm=new QListWidgetItem(Eitm_vect.at(i)->mIcon
-                          ,QString::number(Eitm_vect.at(i)->nrporz)+"[ "+Eitm_vect.at(i)->typ+ " ][ "+Eitm_vect.at(i)->nazwa+" ][ "+QString::number(Eitm_vect.at(i)->ilosc)+" ]",0,0);
-    ui->listWidget->addItem(itm);
-    ui->listWidget->setSizePolicy(QSizePolicy::Ignored,QSizePolicy::Ignored);
-    nrglobal++;
-    }
+    if(ui->listWidget->count()!=0) addItem(ui->listWidget->currentItem()->text().at(0).digitValue()-1);
+    else addItem(0);
 
 }
 void MainWindow::on_pushButton_2_clicked()
@@ -107,27 +81,10 @@ void MainWindow::on_pushButton_2_clicked()
 
    if(Eitm_vect.size()>=1 &&ui->listWidget->currentItem()->text().at(0).digitValue()!=Eitm_vect.size()) Eitm_vect.remove(ui->listWidget->currentItem()->text().at(0).digitValue()-1);
     else if(ui->listWidget->currentItem()->text().at(0).digitValue()==Eitm_vect.size()) Eitm_vect.removeLast();
-    ui->listWidget->setMinimumHeight((Eitm_vect.size()+1)*19);
-    ui->listWidget->setMaximumHeight((Eitm_vect.size()+1)*19);
 
-
-    nrglobal=1;
-
-    ui->listWidget->clear();
-    for(int i=0;i<Eitm_vect.size();i++)
-    {
-
-    Eitm_vect.at(i)->nazwa+ " "+QString::number(Eitm_vect.at(i)->ilosc)+" "+Eitm_vect.at(i)->typ;
-    Eitm_vect.at(i)->nrporz=nrglobal;
-     QListWidgetItem *itm=new QListWidgetItem(Eitm_vect.at(i)->mIcon
-                          ,QString::number(Eitm_vect.at(i)->nrporz)+"[ "+Eitm_vect.at(i)->typ+ " ][ "+Eitm_vect.at(i)->nazwa+" ][ "+QString::number(Eitm_vect.at(i)->ilosc)+" ]",0,0);
-
-    ui->listWidget->addItem(itm);
-    ui->listWidget->setSizePolicy(QSizePolicy::Ignored,QSizePolicy::Ignored);
-    nrglobal++;
     }
-}
-
+    if(ui->listWidget->count()!=0) addItem(ui->listWidget->currentItem()->text().at(0).digitValue()-1);
+    else addItem(0);
 
 }
 
@@ -187,7 +144,54 @@ void MainWindow::on_lineEdit_textChanged(const QString )
                 QListWidgetItem *itm=new QListWidgetItem(Eitm_vect.at(i)->mIcon
                                      ,QString::number(Eitm_vect.at(i)->nrporz)+"[ "+Eitm_vect.at(i)->typ+ " ][ "+Eitm_vect.at(i)->nazwa+" ][ "+QString::number(Eitm_vect.at(i)->ilosc)+" ]",0,0);
                ui->listWidget->addItem(itm);
-               ui->listWidget->setSizePolicy(QSizePolicy::Ignored,QSizePolicy::Ignored);
         }
+    }
+}
+
+void MainWindow::on_pushButton_4_clicked()
+{
+    if(!Eitm_vect.isEmpty() && ui->listWidget->isItemSelected(ui->listWidget->currentItem()))
+    {
+Eitm_vect.at(ui->listWidget->currentItem()->text().at(0).digitValue()-1)->ilosc++;
+
+if(ui->listWidget->count()!=0) addItem(ui->listWidget->currentItem()->text().at(0).digitValue()-1);
+else addItem(0);
+    }
+}
+
+void MainWindow::addItem(int lastone)
+{
+    nrglobal=1;
+
+
+    ui->listWidget->clear();
+    for(int i=0;i<Eitm_vect.size();i++)
+    {
+    Eitm_vect.at(i)->nazwa+ " "+QString::number(Eitm_vect.at(i)->ilosc)+" "+Eitm_vect.at(i)->typ;
+    Eitm_vect.at(i)->nrporz=nrglobal;
+     QListWidgetItem *itm=new QListWidgetItem(Eitm_vect.at(i)->mIcon
+                          ,QString::number(Eitm_vect.at(i)->nrporz)+"[ "+Eitm_vect.at(i)->typ+ " ][ "+Eitm_vect.at(i)->nazwa+" ][ "+QString::number(Eitm_vect.at(i)->ilosc)+" ]",0,0);
+
+    ui->listWidget->addItem(itm);
+    nrglobal++;
+    }
+    ui->listWidget->setCurrentRow(lastone);
+
+    ui->listWidget->show();
+
+if(Eitm_vect.size()<10)
+{
+ui->listWidget->setMaximumHeight(19*(Eitm_vect.size()+1));
+ui->listWidget->setMinimumHeight(19*(Eitm_vect.size()+1));
+}
+}
+
+void MainWindow::on_pushButton_5_clicked()
+{
+    if(!Eitm_vect.isEmpty() && ui->listWidget->isItemSelected(ui->listWidget->currentItem()))
+    {
+Eitm_vect.at(ui->listWidget->currentItem()->text().at(0).digitValue()-1)->ilosc--;
+if(ui->listWidget->count()!=0) addItem(ui->listWidget->currentRow());
+else addItem(0);
     }
 }

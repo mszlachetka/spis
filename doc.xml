@@ -1,17 +1,2 @@
 <?xml version="1.0"?>
-<Spis Tytul="ELEKTRONIKA">
-	<przedmiot typ="potencjometr" ilosc="10" nazwa="500R" />
-	<przedmiot typ="potencjometr" ilosc="10" nazwa="5K" />
-	<przedmiot typ="potencjometr" ilosc="10" nazwa="100K" />
-	<przedmiot typ="serwomechanizm" ilosc="2" nazwa="tower pro SG-5010" />
-	<przedmiot typ="układ scalony" ilosc="5" nazwa="ATmega8A-PU" />
-	<przedmiot typ="tranzystor" ilosc="10" nazwa="BC547B NPN" />
-	<przedmiot typ="wyświetlacz" ilosc="1" nazwa="LCD 16x2" />
-	<przedmiot typ="akcesoria" ilosc="2" nazwa="płytka stykowa 830" />
-	<przedmiot typ="akcesoria" ilosc="5" nazwa="DIL28 podstawka wąska" />
-	<przedmiot typ="komunikacja" ilosc="1" nazwa="RF nadajnik 433MHz" />
-	<przedmiot typ="komunikacja" ilosc="1" nazwa="RF odbiornik 433MHz" />
-	<przedmiot typ="akcesoria" ilosc="2" nazwa="Metalowy orczyk do serwa" />
-	<przedmiot typ="akcesoria" ilosc="5" nazwa="10xgold pin 1x8" />
-	<przedmiot typ="układ scalony" ilosc="5" nazwa="74LS00 NAND" />
-</Spis>
+<Spis Tytul="ELEKTRONIKA" />
