@@ -32,6 +32,8 @@ private slots:
 
     void addItem(int lastone);
 
+    int getnumber();
+
     void on_actionO_Qt_triggered();
 
     void on_lineEdit_textChanged(const QString);
@@ -39,6 +41,10 @@ private slots:
     void on_pushButton_4_clicked();
 
     void on_pushButton_5_clicked();
+
+
+
+    void on_lineEdit_returnPressed();
 
 public slots:
     void onNewTextEntered(const QString &text,const double &ammount, const QString &typ,const QIcon &mIcon);

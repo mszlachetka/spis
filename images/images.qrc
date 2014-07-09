@@ -12,5 +12,11 @@
         <file>akcesoria.jpg</file>
         <file>czujnik.jpg</file>
         <file>komunikacja.jpg</file>
+        <file>plus.jpg</file>
+        <file>elektronika.jpg</file>
+        <file>dioda_zenera.jpg</file>
+        <file>przycisk.jpg</file>
+        <file>rezystor_smd.jpg</file>
+        <file>kondesator_smd.jpg</file>
     </qresource>
 </RCC>

@@ -25,6 +25,7 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QToolBar>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -36,6 +37,7 @@ public:
     QAction *actionO_Qt;
     QWidget *centralWidget;
     QGridLayout *gridLayout;
+    QListWidget *listWidget;
     QVBoxLayout *verticalLayout_2;
     QVBoxLayout *verticalLayout;
     QPushButton *pushButton;
@@ -43,21 +45,33 @@ public:
     QHBoxLayout *horizontalLayout;
     QLabel *label;
     QLineEdit *lineEdit;
-    QListWidget *listWidget;
-    QSpacerItem *verticalSpacer;
     QHBoxLayout *horizontalLayout_2;
     QPushButton *pushButton_4;
     QPushButton *pushButton_5;
     QPushButton *pushButton_3;
+    QSpacerItem *verticalSpacer;
     QMenuBar *menuBar;
     QMenu *menuAbout_Qt;
     QStatusBar *statusBar;
+    QToolBar *toolBar;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
         MainWindow->resize(296, 326);
+        QPalette palette;
+        QBrush brush(QColor(255, 255, 255, 255));
+        brush.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Button, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::Button, brush);
+        palette.setBrush(QPalette::Disabled, QPalette::Button, brush);
+        MainWindow->setPalette(palette);
+        QIcon icon;
+        icon.addFile(QStringLiteral(":/images/elektronika.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        MainWindow->setWindowIcon(icon);
+        MainWindow->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
+        MainWindow->setDocumentMode(false);
         actionO_Qt = new QAction(MainWindow);
         actionO_Qt->setObjectName(QStringLiteral("actionO_Qt"));
         centralWidget = new QWidget(MainWindow);
@@ -66,6 +80,14 @@ public:
         gridLayout->setSpacing(6);
         gridLayout->setContentsMargins(11, 11, 11, 11);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
+        listWidget = new QListWidget(centralWidget);
+        listWidget->setObjectName(QStringLiteral("listWidget"));
+        listWidget->setEnabled(true);
+        listWidget->setMaximumSize(QSize(280, 21));
+        listWidget->viewport()->setProperty("cursor", QVariant(QCursor(Qt::CrossCursor)));
+
+        gridLayout->addWidget(listWidget, 1, 0, 1, 1);
+
         verticalLayout_2 = new QVBoxLayout();
         verticalLayout_2->setSpacing(6);
         verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
@@ -104,17 +126,6 @@ public:
 
         gridLayout->addLayout(verticalLayout_2, 0, 0, 1, 1);
 
-        listWidget = new QListWidget(centralWidget);
-        listWidget->setObjectName(QStringLiteral("listWidget"));
-        listWidget->setEnabled(true);
-        listWidget->setMaximumSize(QSize(280, 21));
-
-        gridLayout->addWidget(listWidget, 1, 0, 1, 1);
-
-        verticalSpacer = new QSpacerItem(275, 118, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        gridLayout->addItem(verticalSpacer, 2, 0, 1, 1);
-
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setSpacing(6);
         horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
@@ -136,11 +147,11 @@ public:
 
         gridLayout->addLayout(horizontalLayout_2, 3, 0, 1, 1);
 
+        verticalSpacer = new QSpacerItem(275, 118, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout->addItem(verticalSpacer, 2, 0, 1, 1);
+
         MainWindow->setCentralWidget(centralWidget);
-        pushButton_3->raise();
-        listWidget->raise();
-        pushButton_4->raise();
-        pushButton_5->raise();
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
         menuBar->setGeometry(QRect(0, 0, 296, 21));
@@ -150,6 +161,9 @@ public:
         statusBar = new QStatusBar(MainWindow);
         statusBar->setObjectName(QStringLiteral("statusBar"));
         MainWindow->setStatusBar(statusBar);
+        toolBar = new QToolBar(MainWindow);
+        toolBar->setObjectName(QStringLiteral("toolBar"));
+        MainWindow->addToolBar(Qt::TopToolBarArea, toolBar);
 #ifndef QT_NO_SHORTCUT
         label->setBuddy(lineEdit);
 #endif // QT_NO_SHORTCUT
@@ -173,6 +187,7 @@ public:
         pushButton_5->setText(QApplication::translate("MainWindow", "-", 0));
         pushButton_3->setText(QApplication::translate("MainWindow", "Zapisz/Zako\305\204cz", 0));
         menuAbout_Qt->setTitle(QApplication::translate("MainWindow", "HELP", 0));
+        toolBar->setWindowTitle(QApplication::translate("MainWindow", "toolBar", 0));
     } // retranslateUi
 
 };
