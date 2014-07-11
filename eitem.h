@@ -10,7 +10,7 @@ public:
     QString nazwa;
     double ilosc;
     QString typ;
-    int nrporz=0;
+    int nrporz;
     QIcon mIcon;
 
 };

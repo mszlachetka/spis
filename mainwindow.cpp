@@ -19,7 +19,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     setWindowTitle("SPIS ELEKTRONIKI");
-
+    nrglobal=1;
     xml_document doc;
         if(doc.load_file("doc.xml"))
         {
@@ -98,6 +98,7 @@ void MainWindow::on_listWidget_currentItemChanged(QListWidgetItem *current, QLis
 {
     if(current!=NULL) current->setBackgroundColor(Qt::green);
    if(previous!=NULL) previous->setBackgroundColor(Qt::white);
+
 }
 
 void MainWindow::on_pushButton_3_clicked()
@@ -106,7 +107,7 @@ void MainWindow::on_pushButton_3_clicked()
             xml_node spis = doc.append_child("Spis");
             spis.append_attribute("Tytul")="ELEKTRONIKA";
 
-            for(unsigned int i=0; i<Eitm_vect.size();i++)
+            for(int i=0; i<Eitm_vect.size();i++)
                     {
                         xml_node przedmiot = spis.append_child("przedmiot");
 
@@ -135,9 +136,13 @@ void MainWindow::on_lineEdit_textChanged(const QString )
     ui->listWidget->clear();
     nrglobal=1;
     QString check;
+    ui->listWidget->findItems(check,Qt::MatchContains);
+
     for(int i=0;i<Eitm_vect.size();i++)
     {
          check=Eitm_vect.at(i)->nazwa+ " "+QString::number(Eitm_vect.at(i)->ilosc)+" "+Eitm_vect.at(i)->typ;
+
+
         if(check.contains(ui->lineEdit->text()))
         {
 
@@ -173,6 +178,7 @@ void MainWindow::addItem(int lastone)
                           ,QString::number(Eitm_vect.at(i)->nrporz)+"[ "+Eitm_vect.at(i)->typ+ " ][ "+Eitm_vect.at(i)->nazwa+" ][ "+QString::number(Eitm_vect.at(i)->ilosc)+" ]",0,0);
 
     ui->listWidget->addItem(itm);
+
     nrglobal++;
     }
     ui->listWidget->setCurrentRow(lastone);
@@ -195,6 +201,7 @@ void MainWindow::on_pushButton_5_clicked()
 
     if(ui->listWidget->count()!=0) addItem(getnumber());
     else addItem(0);
+
     }
 }
 
@@ -231,4 +238,10 @@ void MainWindow::on_lineEdit_returnPressed()
                ui->listWidget->addItem(itm);
         }
     }
+}
+
+void MainWindow::on_action_triggered()
+{
+    mSkroty=new skroty(this);
+    mSkroty->show();
 }

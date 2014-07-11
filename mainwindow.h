@@ -5,6 +5,7 @@
 #include <QListWidget>
 #include "dialog.h"
 #include "eitem.h"
+#include "skroty.h"
 #include <QVector>
 
 
@@ -46,12 +47,15 @@ private slots:
 
     void on_lineEdit_returnPressed();
 
+    void on_action_triggered();
+
 public slots:
     void onNewTextEntered(const QString &text,const double &ammount, const QString &typ,const QIcon &mIcon);
 private:
     Ui::MainWindow *ui;
     Dialog *mDialog;
-    int nrglobal=1;
+    skroty *mSkroty;
+    int nrglobal;
 signals:
 
 };

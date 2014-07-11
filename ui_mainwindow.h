@@ -35,6 +35,7 @@ class Ui_MainWindow
 {
 public:
     QAction *actionO_Qt;
+    QAction *action;
     QWidget *centralWidget;
     QGridLayout *gridLayout;
     QListWidget *listWidget;
@@ -45,11 +46,11 @@ public:
     QHBoxLayout *horizontalLayout;
     QLabel *label;
     QLineEdit *lineEdit;
+    QSpacerItem *verticalSpacer;
     QHBoxLayout *horizontalLayout_2;
     QPushButton *pushButton_4;
     QPushButton *pushButton_5;
     QPushButton *pushButton_3;
-    QSpacerItem *verticalSpacer;
     QMenuBar *menuBar;
     QMenu *menuAbout_Qt;
     QStatusBar *statusBar;
@@ -59,7 +60,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(296, 326);
+        MainWindow->resize(296, 380);
         QPalette palette;
         QBrush brush(QColor(255, 255, 255, 255));
         brush.setStyle(Qt::SolidPattern);
@@ -74,6 +75,8 @@ public:
         MainWindow->setDocumentMode(false);
         actionO_Qt = new QAction(MainWindow);
         actionO_Qt->setObjectName(QStringLiteral("actionO_Qt"));
+        action = new QAction(MainWindow);
+        action->setObjectName(QStringLiteral("action"));
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         gridLayout = new QGridLayout(centralWidget);
@@ -126,16 +129,22 @@ public:
 
         gridLayout->addLayout(verticalLayout_2, 0, 0, 1, 1);
 
+        verticalSpacer = new QSpacerItem(275, 118, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout->addItem(verticalSpacer, 2, 0, 1, 1);
+
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setSpacing(6);
         horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
         pushButton_4 = new QPushButton(centralWidget);
         pushButton_4->setObjectName(QStringLiteral("pushButton_4"));
+        pushButton_4->setAutoRepeat(true);
 
         horizontalLayout_2->addWidget(pushButton_4);
 
         pushButton_5 = new QPushButton(centralWidget);
         pushButton_5->setObjectName(QStringLiteral("pushButton_5"));
+        pushButton_5->setAutoRepeat(true);
 
         horizontalLayout_2->addWidget(pushButton_5);
 
@@ -146,10 +155,6 @@ public:
 
 
         gridLayout->addLayout(horizontalLayout_2, 3, 0, 1, 1);
-
-        verticalSpacer = new QSpacerItem(275, 118, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        gridLayout->addItem(verticalSpacer, 2, 0, 1, 1);
 
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
@@ -170,6 +175,7 @@ public:
 
         menuBar->addAction(menuAbout_Qt->menuAction());
         menuAbout_Qt->addAction(actionO_Qt);
+        menuAbout_Qt->addAction(action);
 
         retranslateUi(MainWindow);
 
@@ -180,12 +186,18 @@ public:
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0));
         actionO_Qt->setText(QApplication::translate("MainWindow", "O Qt", 0));
+        action->setText(QApplication::translate("MainWindow", "Skr\303\263ty klawiszowe", 0));
         pushButton->setText(QApplication::translate("MainWindow", "Dodaj", 0));
+        pushButton->setShortcut(QApplication::translate("MainWindow", "Ins", 0));
         pushButton_2->setText(QApplication::translate("MainWindow", "Usun", 0));
+        pushButton_2->setShortcut(QApplication::translate("MainWindow", "Del", 0));
         label->setText(QApplication::translate("MainWindow", "Wyszukaj", 0));
         pushButton_4->setText(QApplication::translate("MainWindow", "+", 0));
+        pushButton_4->setShortcut(QApplication::translate("MainWindow", "+", 0));
         pushButton_5->setText(QApplication::translate("MainWindow", "-", 0));
+        pushButton_5->setShortcut(QApplication::translate("MainWindow", "-", 0));
         pushButton_3->setText(QApplication::translate("MainWindow", "Zapisz/Zako\305\204cz", 0));
+        pushButton_3->setShortcut(QApplication::translate("MainWindow", "Esc", 0));
         menuAbout_Qt->setTitle(QApplication::translate("MainWindow", "HELP", 0));
         toolBar->setWindowTitle(QApplication::translate("MainWindow", "toolBar", 0));
     } // retranslateUi

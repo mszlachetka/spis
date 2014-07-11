@@ -1,0 +1,12 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\eitem.o
+./release\dialog.o
+./release\pugixml.o
+./release\skroty.o
+./release\qrc_images.o
+./release\moc_mainwindow.o
+./release\moc_dialog.o
+./release\moc_skroty.o
+);

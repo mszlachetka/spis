@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>296</width>
-    <height>326</height>
+    <height>380</height>
    </rect>
   </property>
   <property name="palette">
@@ -87,12 +87,18 @@
           <property name="text">
            <string>Dodaj</string>
           </property>
+          <property name="shortcut">
+           <string>Ins</string>
+          </property>
          </widget>
         </item>
         <item>
          <widget class="QPushButton" name="pushButton_2">
           <property name="text">
            <string>Usun</string>
+          </property>
+          <property name="shortcut">
+           <string>Del</string>
           </property>
          </widget>
         </item>
@@ -117,31 +123,6 @@
       </item>
      </layout>
     </item>
-    <item row="3" column="0">
-     <layout class="QHBoxLayout" name="horizontalLayout_2">
-      <item>
-       <widget class="QPushButton" name="pushButton_4">
-        <property name="text">
-         <string>+</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_5">
-        <property name="text">
-         <string>-</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_3">
-        <property name="text">
-         <string>Zapisz/Zakończ</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
     <item row="2" column="0">
      <spacer name="verticalSpacer">
       <property name="orientation">
@@ -154,6 +135,46 @@
        </size>
       </property>
      </spacer>
+    </item>
+    <item row="3" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="text">
+         <string>+</string>
+        </property>
+        <property name="shortcut">
+         <string>+</string>
+        </property>
+        <property name="autoRepeat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="text">
+         <string>-</string>
+        </property>
+        <property name="shortcut">
+         <string>-</string>
+        </property>
+        <property name="autoRepeat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="text">
+         <string>Zapisz/Zakończ</string>
+        </property>
+        <property name="shortcut">
+         <string>Esc</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </item>
    </layout>
   </widget>
@@ -171,6 +192,7 @@
      <string>HELP</string>
     </property>
     <addaction name="actionO_Qt"/>
+    <addaction name="action"/>
    </widget>
    <addaction name="menuAbout_Qt"/>
   </widget>
@@ -189,6 +211,11 @@
   <action name="actionO_Qt">
    <property name="text">
     <string>O Qt</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>Skróty klawiszowe</string>
    </property>
   </action>
  </widget>

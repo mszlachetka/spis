@@ -1,0 +1,12 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\eitem.o
+./debug\dialog.o
+./debug\pugixml.o
+./debug\skroty.o
+./debug\qrc_images.o
+./debug\moc_mainwindow.o
+./debug\moc_dialog.o
+./debug\moc_skroty.o
+);

@@ -99,5 +99,6 @@
 	<przedmiot typ="przycisk" ilosc="3" nazwa="1xTact Switch" />
 	<przedmiot typ="przycisk" ilosc="5" nazwa="3xDip Switch" />
 	<przedmiot typ="układ scalony" ilosc="1" nazwa="ATmega88PA" />
-	<przedmiot typ="czujnik" ilosc="1" nazwa="HC-SR04 utradźwiękowy" />
+	<przedmiot typ="czujnik" ilosc="1" nazwa="HC-SR04 ultradźwiękowy" />
+	<przedmiot typ="dioda IR" ilosc="18" nazwa="TSAL6200" />
 </Spis>

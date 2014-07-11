@@ -16,16 +16,19 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     eitem.cpp \
     dialog.cpp \
-    pugixml.cpp
+    pugixml.cpp \
+    skroty.cpp
 
 HEADERS  += mainwindow.h \
     eitem.h \
     dialog.h \
     pugiconfig.hpp \
-    pugixml.hpp
+    pugixml.hpp \
+    skroty.h
 
 FORMS    += mainwindow.ui \
-    dialog.ui
+    dialog.ui \
+    skroty.ui
 
 RESOURCES += \
     images/images.qrc
