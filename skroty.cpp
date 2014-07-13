@@ -7,6 +7,7 @@ skroty::skroty(QWidget *parent) :
     ui(new Ui::skroty)
 {
     ui->setupUi(this);
+    setWindowTitle("SKRÓTY");
 }
 skroty::~skroty()
 {

@@ -18,5 +18,7 @@
         <file>przycisk.jpg</file>
         <file>rezystor_smd.jpg</file>
         <file>kondesator_smd.jpg</file>
+        <file>qt.jpg</file>
+        <file>skrot.jpg</file>
     </qresource>
 </RCC>

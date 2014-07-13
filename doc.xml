@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Spis Tytul="ELEKTRONIKA">
-	<przedmiot typ="akcesoria" ilosc="4" nazwa="płytka stykowa 830" />
+	<przedmiot typ="akcesoria" ilosc="2" nazwa="płytka stykowa 830" />
 	<przedmiot typ="potencjometr" ilosc="10" nazwa="500R" />
 	<przedmiot typ="potencjometr" ilosc="10" nazwa="5K" />
 	<przedmiot typ="potencjometr" ilosc="10" nazwa="100K" />
@@ -13,7 +13,6 @@
 	<przedmiot typ="akcesoria" ilosc="10" nazwa="10xlistwa kołkowo 8x1" />
 	<przedmiot typ="akcesoria" ilosc="2" nazwa="metalowy orczyk do serwa" />
 	<przedmiot typ="układ scalony" ilosc="5" nazwa="NAND 74LS00" />
-	<przedmiot typ="wyświetlacz" ilosc="1" nazwa="LCD niebieski 2x16" />
 	<przedmiot typ="dioda IR" ilosc="18" nazwa="LD274" />
 	<przedmiot typ="akcesoria" ilosc="17" nazwa="TSAL6200" />
 	<przedmiot typ="dioda LED" ilosc="2" nazwa="RGB 3mm" />
@@ -101,4 +100,6 @@
 	<przedmiot typ="układ scalony" ilosc="1" nazwa="ATmega88PA" />
 	<przedmiot typ="czujnik" ilosc="1" nazwa="HC-SR04 ultradźwiękowy" />
 	<przedmiot typ="dioda IR" ilosc="18" nazwa="TSAL6200" />
+	<przedmiot typ="wyświetlacz" ilosc="1" nazwa="LCD niebieski 2x8" />
+	<przedmiot typ="kondensator SMD" ilosc="10" nazwa="10pF" />
 </Spis>

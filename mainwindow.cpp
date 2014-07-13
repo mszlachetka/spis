@@ -5,6 +5,7 @@
 #include "pugixml.hpp"
 #include "string.h"
 #include "sstream"
+#include <QMessageBox>
 
 #include <iostream>
 
@@ -35,6 +36,7 @@ MainWindow::MainWindow(QWidget *parent) :
                 teitm->ilosc=ilosc;
                teitm->nazwa=przed.attribute("nazwa").value();
                teitm->typ=przed.attribute("typ").value();
+
             Eitm_vect.push_back(teitm);
            addItem(0);
 }
@@ -65,6 +67,7 @@ void MainWindow::onNewTextEntered(const QString &text,const double &ammount,cons
     przedmiot->ilosc=ammount;
     przedmiot->typ=typ;
     przedmiot->mIcon=mIcon;
+
     Eitm_vect.push_back(przedmiot);
     if(ui->listWidget->count()!=0) addItem(getnumber());
     else addItem(0);
@@ -136,13 +139,9 @@ void MainWindow::on_lineEdit_textChanged(const QString )
     ui->listWidget->clear();
     nrglobal=1;
     QString check;
-    ui->listWidget->findItems(check,Qt::MatchContains);
-
     for(int i=0;i<Eitm_vect.size();i++)
     {
          check=Eitm_vect.at(i)->nazwa+ " "+QString::number(Eitm_vect.at(i)->ilosc)+" "+Eitm_vect.at(i)->typ;
-
-
         if(check.contains(ui->lineEdit->text()))
         {
 
@@ -178,7 +177,6 @@ void MainWindow::addItem(int lastone)
                           ,QString::number(Eitm_vect.at(i)->nrporz)+"[ "+Eitm_vect.at(i)->typ+ " ][ "+Eitm_vect.at(i)->nazwa+" ][ "+QString::number(Eitm_vect.at(i)->ilosc)+" ]",0,0);
 
     ui->listWidget->addItem(itm);
-
     nrglobal++;
     }
     ui->listWidget->setCurrentRow(lastone);
@@ -244,4 +242,6 @@ void MainWindow::on_action_triggered()
 {
     mSkroty=new skroty(this);
     mSkroty->show();
+
+
 }
