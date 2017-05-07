@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'dialog.ui'
 **
-** Created by: Qt User Interface Compiler version 5.3.0
+** Created by: Qt User Interface Compiler version 5.7.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -44,7 +44,7 @@ public:
     {
         if (Dialog->objectName().isEmpty())
             Dialog->setObjectName(QStringLiteral("Dialog"));
-        Dialog->resize(228, 133);
+        Dialog->resize(228, 143);
         QIcon icon;
         icon.addFile(QStringLiteral(":/images/plus.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         Dialog->setWindowIcon(icon);
@@ -110,32 +110,35 @@ public:
         icon7.addFile(QStringLiteral(":/images/kondesator.png"), QSize(), QIcon::Normal, QIcon::Off);
         comboBox->addItem(icon7, QString());
         QIcon icon8;
-        icon8.addFile(QStringLiteral(":/images/kondesator_smd.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        icon8.addFile(QStringLiteral(":/images/komunikacja.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         comboBox->addItem(icon8, QString());
         QIcon icon9;
-        icon9.addFile(QStringLiteral(":/images/komunikacja.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        icon9.addFile(QStringLiteral(":/images/potencjometr.png"), QSize(), QIcon::Normal, QIcon::Off);
         comboBox->addItem(icon9, QString());
         QIcon icon10;
-        icon10.addFile(QStringLiteral(":/images/potencjometr.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon10.addFile(QStringLiteral(":/images/rezystor.png"), QSize(), QIcon::Normal, QIcon::Off);
         comboBox->addItem(icon10, QString());
         QIcon icon11;
-        icon11.addFile(QStringLiteral(":/images/rezystor.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon11.addFile(QStringLiteral(":/images/serwomechanizm.png"), QSize(), QIcon::Normal, QIcon::Off);
         comboBox->addItem(icon11, QString());
         QIcon icon12;
-        icon12.addFile(QStringLiteral(":/images/rezystor_smd.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        icon12.addFile(QStringLiteral(":/images/tranzystor.png"), QSize(), QIcon::Normal, QIcon::Off);
         comboBox->addItem(icon12, QString());
         QIcon icon13;
-        icon13.addFile(QStringLiteral(":/images/serwomechanizm.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon13.addFile(QStringLiteral(":/images/scalony.png"), QSize(), QIcon::Normal, QIcon::Off);
         comboBox->addItem(icon13, QString());
         QIcon icon14;
-        icon14.addFile(QStringLiteral(":/images/tranzystor_bipolarny.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon14.addFile(QStringLiteral(":/images/mikrokontroler.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         comboBox->addItem(icon14, QString());
         QIcon icon15;
-        icon15.addFile(QStringLiteral(":/images/scalony.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon15.addFile(QStringLiteral(":/images/silnik_dc.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         comboBox->addItem(icon15, QString());
         QIcon icon16;
-        icon16.addFile(QStringLiteral(":/images/wyswietlacz.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon16.addFile(QStringLiteral("images/silnik_krokowy.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         comboBox->addItem(icon16, QString());
+        QIcon icon17;
+        icon17.addFile(QStringLiteral(":/images/wyswietlacz.png"), QSize(), QIcon::Normal, QIcon::Off);
+        comboBox->addItem(icon17, QString());
         comboBox->setObjectName(QStringLiteral("comboBox"));
         comboBox->setAutoFillBackground(false);
         comboBox->setMaxVisibleItems(15);
@@ -167,26 +170,27 @@ public:
 
     void retranslateUi(QDialog *Dialog)
     {
-        Dialog->setWindowTitle(QApplication::translate("Dialog", "Dialog", 0));
-        label->setText(QApplication::translate("Dialog", "<html><head/><body><p align=\"center\"><span style=\" font-size:10pt; font-weight:600;\">Nazwa</span></p></body></html>", 0));
-        label_2->setText(QApplication::translate("Dialog", "<html><head/><body><p align=\"center\"><span style=\" font-size:10pt; font-weight:600;\">Ilosc</span></p></body></html>", 0));
-        label_3->setText(QApplication::translate("Dialog", "<html><head/><body><p align=\"center\"><span style=\" font-size:10pt; font-weight:600;\">Typ</span></p></body></html>", 0));
-        comboBox->setItemText(0, QApplication::translate("Dialog", "akcesoria", 0));
-        comboBox->setItemText(1, QApplication::translate("Dialog", "czujnik", 0));
-        comboBox->setItemText(2, QApplication::translate("Dialog", "dioda IR", 0));
-        comboBox->setItemText(3, QApplication::translate("Dialog", "dioda LED", 0));
-        comboBox->setItemText(4, QApplication::translate("Dialog", "dioda Zenera", 0));
-        comboBox->setItemText(5, QApplication::translate("Dialog", "przycisk", 0));
-        comboBox->setItemText(6, QApplication::translate("Dialog", "kondensator THT", 0));
-        comboBox->setItemText(7, QApplication::translate("Dialog", "kondensator SMD", 0));
-        comboBox->setItemText(8, QApplication::translate("Dialog", "komunikacja", 0));
-        comboBox->setItemText(9, QApplication::translate("Dialog", "potencjometr", 0));
-        comboBox->setItemText(10, QApplication::translate("Dialog", "rezystor THT", 0));
-        comboBox->setItemText(11, QApplication::translate("Dialog", "rezystor SMD", 0));
-        comboBox->setItemText(12, QApplication::translate("Dialog", "serwomechanizm", 0));
-        comboBox->setItemText(13, QApplication::translate("Dialog", "tranzystor", 0));
-        comboBox->setItemText(14, QApplication::translate("Dialog", "uk\305\202ad scalony", 0));
-        comboBox->setItemText(15, QApplication::translate("Dialog", "wy\305\233wietlacz", 0));
+        Dialog->setWindowTitle(QApplication::translate("Dialog", "Dialog", Q_NULLPTR));
+        label->setText(QApplication::translate("Dialog", "<html><head/><body><p align=\"center\"><span style=\" font-size:10pt; font-weight:600;\">Nazwa</span></p></body></html>", Q_NULLPTR));
+        label_2->setText(QApplication::translate("Dialog", "<html><head/><body><p align=\"center\"><span style=\" font-size:10pt; font-weight:600;\">Ilosc</span></p></body></html>", Q_NULLPTR));
+        label_3->setText(QApplication::translate("Dialog", "<html><head/><body><p align=\"center\"><span style=\" font-size:10pt; font-weight:600;\">Typ</span></p></body></html>", Q_NULLPTR));
+        comboBox->setItemText(0, QApplication::translate("Dialog", "akcesoria", Q_NULLPTR));
+        comboBox->setItemText(1, QApplication::translate("Dialog", "czujnik", Q_NULLPTR));
+        comboBox->setItemText(2, QApplication::translate("Dialog", "dioda IR", Q_NULLPTR));
+        comboBox->setItemText(3, QApplication::translate("Dialog", "dioda LED", Q_NULLPTR));
+        comboBox->setItemText(4, QApplication::translate("Dialog", "dioda Zenera", Q_NULLPTR));
+        comboBox->setItemText(5, QApplication::translate("Dialog", "przycisk", Q_NULLPTR));
+        comboBox->setItemText(6, QApplication::translate("Dialog", "kondensator", Q_NULLPTR));
+        comboBox->setItemText(7, QApplication::translate("Dialog", "komunikacja", Q_NULLPTR));
+        comboBox->setItemText(8, QApplication::translate("Dialog", "potencjometr", Q_NULLPTR));
+        comboBox->setItemText(9, QApplication::translate("Dialog", "rezystor", Q_NULLPTR));
+        comboBox->setItemText(10, QApplication::translate("Dialog", "serwomechanizm", Q_NULLPTR));
+        comboBox->setItemText(11, QApplication::translate("Dialog", "tranzystor", Q_NULLPTR));
+        comboBox->setItemText(12, QApplication::translate("Dialog", "uk\305\202ad scalony", Q_NULLPTR));
+        comboBox->setItemText(13, QApplication::translate("Dialog", "mikrokontroler", Q_NULLPTR));
+        comboBox->setItemText(14, QApplication::translate("Dialog", "silnik DC", Q_NULLPTR));
+        comboBox->setItemText(15, QApplication::translate("Dialog", "silnik krokowy", Q_NULLPTR));
+        comboBox->setItemText(16, QApplication::translate("Dialog", "wy\305\233wietlacz", Q_NULLPTR));
 
     } // retranslateUi
 

@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'dialog.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.3.0)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.7.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,7 +12,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'dialog.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.3.0. It"
+#error "This file was generated using the moc from 5.7.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -20,23 +20,24 @@
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_Dialog_t {
     QByteArrayData data[8];
-    char stringdata[68];
+    char stringdata0[68];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_Dialog_t, stringdata) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_Dialog_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
 static const qt_meta_stringdata_Dialog_t qt_meta_stringdata_Dialog = {
     {
-QT_MOC_LITERAL(0, 0, 6),
-QT_MOC_LITERAL(1, 7, 14),
-QT_MOC_LITERAL(2, 22, 0),
-QT_MOC_LITERAL(3, 23, 4),
-QT_MOC_LITERAL(4, 28, 7),
-QT_MOC_LITERAL(5, 36, 3),
-QT_MOC_LITERAL(6, 40, 5),
-QT_MOC_LITERAL(7, 46, 21)
+QT_MOC_LITERAL(0, 0, 6), // "Dialog"
+QT_MOC_LITERAL(1, 7, 14), // "newTextEntered"
+QT_MOC_LITERAL(2, 22, 0), // ""
+QT_MOC_LITERAL(3, 23, 4), // "text"
+QT_MOC_LITERAL(4, 28, 7), // "ammount"
+QT_MOC_LITERAL(5, 36, 3), // "typ"
+QT_MOC_LITERAL(6, 40, 5), // "mIcon"
+QT_MOC_LITERAL(7, 46, 21) // "on_buttonBox_accepted"
+
     },
     "Dialog\0newTextEntered\0\0text\0ammount\0"
     "typ\0mIcon\0on_buttonBox_accepted"
@@ -75,6 +76,7 @@ void Dialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
         Dialog *_t = static_cast<Dialog *>(_o);
+        Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->newTextEntered((*reinterpret_cast< const QString(*)>(_a[1])),(*reinterpret_cast< const double(*)>(_a[2])),(*reinterpret_cast< const QString(*)>(_a[3])),(*reinterpret_cast< const QIcon(*)>(_a[4]))); break;
         case 1: _t->on_buttonBox_accepted(); break;
@@ -87,6 +89,7 @@ void Dialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
             typedef void (Dialog::*_t)(const QString & , const double & , const QString & , const QIcon & );
             if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&Dialog::newTextEntered)) {
                 *result = 0;
+                return;
             }
         }
     }
@@ -94,7 +97,7 @@ void Dialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
 
 const QMetaObject Dialog::staticMetaObject = {
     { &QDialog::staticMetaObject, qt_meta_stringdata_Dialog.data,
-      qt_meta_data_Dialog,  qt_static_metacall, 0, 0}
+      qt_meta_data_Dialog,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
 };
 
 
@@ -105,8 +108,8 @@ const QMetaObject *Dialog::metaObject() const
 
 void *Dialog::qt_metacast(const char *_clname)
 {
-    if (!_clname) return 0;
-    if (!strcmp(_clname, qt_meta_stringdata_Dialog.stringdata))
+    if (!_clname) return Q_NULLPTR;
+    if (!strcmp(_clname, qt_meta_stringdata_Dialog.stringdata0))
         return static_cast<void*>(const_cast< Dialog*>(this));
     return QDialog::qt_metacast(_clname);
 }
@@ -131,7 +134,7 @@ int Dialog::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 // SIGNAL 0
 void Dialog::newTextEntered(const QString & _t1, const double & _t2, const QString & _t3, const QIcon & _t4)
 {
-    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)), const_cast<void*>(reinterpret_cast<const void*>(&_t3)), const_cast<void*>(reinterpret_cast<const void*>(&_t4)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)), const_cast<void*>(reinterpret_cast<const void*>(&_t3)), const_cast<void*>(reinterpret_cast<const void*>(&_t4)) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 QT_END_MOC_NAMESPACE

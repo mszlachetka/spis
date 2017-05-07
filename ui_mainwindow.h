@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.3.0
+** Created by: Qt User Interface Compiler version 5.7.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -36,8 +36,6 @@ public:
     QAction *action;
     QWidget *centralWidget;
     QGridLayout *gridLayout;
-    QListWidget *listWidget;
-    QSpacerItem *verticalSpacer;
     QVBoxLayout *verticalLayout_2;
     QVBoxLayout *verticalLayout;
     QPushButton *pushButton;
@@ -45,10 +43,12 @@ public:
     QHBoxLayout *horizontalLayout;
     QLabel *label;
     QLineEdit *lineEdit;
+    QListWidget *listWidget;
     QHBoxLayout *horizontalLayout_2;
     QPushButton *pushButton_4;
     QPushButton *pushButton_5;
     QPushButton *pushButton_3;
+    QSpacerItem *verticalSpacer;
     QStatusBar *statusBar;
     QToolBar *toolBar;
 
@@ -56,7 +56,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(296, 380);
+        MainWindow->resize(320, 380);
         QPalette palette;
         QBrush brush(QColor(255, 255, 255, 255));
         brush.setStyle(Qt::SolidPattern);
@@ -86,18 +86,6 @@ public:
         gridLayout->setSpacing(6);
         gridLayout->setContentsMargins(11, 11, 11, 11);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
-        listWidget = new QListWidget(centralWidget);
-        listWidget->setObjectName(QStringLiteral("listWidget"));
-        listWidget->setEnabled(true);
-        listWidget->setMaximumSize(QSize(280, 21));
-        listWidget->viewport()->setProperty("cursor", QVariant(QCursor(Qt::CrossCursor)));
-
-        gridLayout->addWidget(listWidget, 1, 0, 1, 1);
-
-        verticalSpacer = new QSpacerItem(275, 118, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        gridLayout->addItem(verticalSpacer, 2, 0, 1, 1);
-
         verticalLayout_2 = new QVBoxLayout();
         verticalLayout_2->setSpacing(6);
         verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
@@ -133,6 +121,14 @@ public:
 
         verticalLayout_2->addLayout(verticalLayout);
 
+        listWidget = new QListWidget(centralWidget);
+        listWidget->setObjectName(QStringLiteral("listWidget"));
+        listWidget->setEnabled(true);
+        listWidget->setMaximumSize(QSize(16777215, 21));
+        listWidget->viewport()->setProperty("cursor", QVariant(QCursor(Qt::CrossCursor)));
+
+        verticalLayout_2->addWidget(listWidget);
+
 
         gridLayout->addLayout(verticalLayout_2, 0, 0, 1, 1);
 
@@ -158,6 +154,10 @@ public:
 
 
         gridLayout->addLayout(horizontalLayout_2, 3, 0, 1, 1);
+
+        verticalSpacer = new QSpacerItem(275, 118, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout->addItem(verticalSpacer, 2, 0, 1, 1);
 
         MainWindow->setCentralWidget(centralWidget);
         statusBar = new QStatusBar(MainWindow);
@@ -185,21 +185,21 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0));
-        actionO_Qt->setText(QApplication::translate("MainWindow", "O Qt", 0));
-        action->setText(QApplication::translate("MainWindow", "Skr\303\263ty klawiszowe", 0));
-        pushButton->setText(QApplication::translate("MainWindow", "Dodaj", 0));
-        pushButton->setShortcut(QApplication::translate("MainWindow", "Ins", 0));
-        pushButton_2->setText(QApplication::translate("MainWindow", "Usun", 0));
-        pushButton_2->setShortcut(QApplication::translate("MainWindow", "Del", 0));
-        label->setText(QApplication::translate("MainWindow", "Wyszukaj", 0));
-        pushButton_4->setText(QApplication::translate("MainWindow", "+", 0));
-        pushButton_4->setShortcut(QApplication::translate("MainWindow", "+", 0));
-        pushButton_5->setText(QApplication::translate("MainWindow", "-", 0));
-        pushButton_5->setShortcut(QApplication::translate("MainWindow", "-", 0));
-        pushButton_3->setText(QApplication::translate("MainWindow", "Zapisz/Zako\305\204cz", 0));
-        pushButton_3->setShortcut(QApplication::translate("MainWindow", "Esc", 0));
-        toolBar->setWindowTitle(QApplication::translate("MainWindow", "toolBar", 0));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", Q_NULLPTR));
+        actionO_Qt->setText(QApplication::translate("MainWindow", "O Qt", Q_NULLPTR));
+        action->setText(QApplication::translate("MainWindow", "Skr\303\263ty klawiszowe", Q_NULLPTR));
+        pushButton->setText(QApplication::translate("MainWindow", "Dodaj", Q_NULLPTR));
+        pushButton->setShortcut(QApplication::translate("MainWindow", "Ins", Q_NULLPTR));
+        pushButton_2->setText(QApplication::translate("MainWindow", "Usun", Q_NULLPTR));
+        pushButton_2->setShortcut(QApplication::translate("MainWindow", "Del", Q_NULLPTR));
+        label->setText(QApplication::translate("MainWindow", "Wyszukaj", Q_NULLPTR));
+        pushButton_4->setText(QApplication::translate("MainWindow", "+", Q_NULLPTR));
+        pushButton_4->setShortcut(QApplication::translate("MainWindow", "+", Q_NULLPTR));
+        pushButton_5->setText(QApplication::translate("MainWindow", "-", Q_NULLPTR));
+        pushButton_5->setShortcut(QApplication::translate("MainWindow", "-", Q_NULLPTR));
+        pushButton_3->setText(QApplication::translate("MainWindow", "Zapisz/Zako\305\204cz", Q_NULLPTR));
+        pushButton_3->setShortcut(QApplication::translate("MainWindow", "Esc", Q_NULLPTR));
+        toolBar->setWindowTitle(QApplication::translate("MainWindow", "toolBar", Q_NULLPTR));
     } // retranslateUi
 
 };

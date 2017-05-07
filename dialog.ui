@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>228</width>
-    <height>133</height>
+    <height>143</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -128,20 +128,11 @@
        </item>
        <item>
         <property name="text">
-         <string>kondensator THT</string>
+         <string>kondensator</string>
         </property>
         <property name="icon">
          <iconset resource="images/images.qrc">
           <normaloff>:/images/kondesator.png</normaloff>:/images/kondesator.png</iconset>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>kondensator SMD</string>
-        </property>
-        <property name="icon">
-         <iconset resource="images/images.qrc">
-          <normaloff>:/images/kondesator_smd.jpg</normaloff>:/images/kondesator_smd.jpg</iconset>
         </property>
        </item>
        <item>
@@ -164,20 +155,11 @@
        </item>
        <item>
         <property name="text">
-         <string>rezystor THT</string>
+         <string>rezystor</string>
         </property>
         <property name="icon">
          <iconset resource="images/images.qrc">
           <normaloff>:/images/rezystor.png</normaloff>:/images/rezystor.png</iconset>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>rezystor SMD</string>
-        </property>
-        <property name="icon">
-         <iconset resource="images/images.qrc">
-          <normaloff>:/images/rezystor_smd.jpg</normaloff>:/images/rezystor_smd.jpg</iconset>
         </property>
        </item>
        <item>
@@ -195,7 +177,7 @@
         </property>
         <property name="icon">
          <iconset resource="images/images.qrc">
-          <normaloff>:/images/tranzystor_bipolarny.png</normaloff>:/images/tranzystor_bipolarny.png</iconset>
+          <normaloff>:/images/tranzystor.png</normaloff>:/images/tranzystor.png</iconset>
         </property>
        </item>
        <item>
@@ -205,6 +187,33 @@
         <property name="icon">
          <iconset resource="images/images.qrc">
           <normaloff>:/images/scalony.png</normaloff>:/images/scalony.png</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>mikrokontroler</string>
+        </property>
+        <property name="icon">
+         <iconset resource="images/images.qrc">
+          <normaloff>:/images/mikrokontroler.jpg</normaloff>:/images/mikrokontroler.jpg</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>silnik DC</string>
+        </property>
+        <property name="icon">
+         <iconset resource="images/images.qrc">
+          <normaloff>:/images/silnik_dc.jpg</normaloff>:/images/silnik_dc.jpg</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>silnik krokowy</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/silnik_krokowy.jpg</normaloff>images/silnik_krokowy.jpg</iconset>
         </property>
        </item>
        <item>

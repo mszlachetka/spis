@@ -6,7 +6,7 @@
         <file>dioda_ir.png</file>
         <file>dioda_led.png</file>
         <file>serwomechanizm.png</file>
-        <file>tranzystor_bipolarny.png</file>
+        <file>tranzystor.png</file>
         <file>wyswietlacz.png</file>
         <file>potencjometr.png</file>
         <file>akcesoria.jpg</file>
@@ -16,9 +16,10 @@
         <file>elektronika.jpg</file>
         <file>dioda_zenera.jpg</file>
         <file>przycisk.jpg</file>
-        <file>rezystor_smd.jpg</file>
-        <file>kondesator_smd.jpg</file>
         <file>qt.jpg</file>
         <file>skrot.jpg</file>
+        <file>mikrokontroler.jpg</file>
+        <file>silnik_dc.jpg</file>
+        <file>silnik_krokowy.jpg</file>
     </qresource>
 </RCC>

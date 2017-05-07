@@ -197,8 +197,22 @@ void MainWindow::on_pushButton_5_clicked()
     {
     if(Eitm_vect.at(getnumber())->ilosc>0) Eitm_vect.at(getnumber())->ilosc--;
 
-    if(ui->listWidget->count()!=0) addItem(getnumber());
+
+    if(ui->listWidget->count()!=0)
+    {
+        addItem(getnumber());
+        if(Eitm_vect.at(getnumber())->ilosc == 0)
+        {
+           ui->listWidget->currentItem()->setBackgroundColor(Qt::red);
+        }
+        else
+        {
+            ui->listWidget->currentItem()->setBackgroundColor(Qt::green);
+        }
+    }
     else addItem(0);
+
+
 
     }
 }

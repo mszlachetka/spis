@@ -1,105 +1,12 @@
 <?xml version="1.0"?>
 <Spis Tytul="ELEKTRONIKA">
-	<przedmiot typ="akcesoria" ilosc="2" nazwa="płytka stykowa 830" />
-	<przedmiot typ="potencjometr" ilosc="10" nazwa="500R" />
-	<przedmiot typ="potencjometr" ilosc="10" nazwa="5K" />
-	<przedmiot typ="potencjometr" ilosc="10" nazwa="100K" />
-	<przedmiot typ="komunikacja" ilosc="1" nazwa="RF nadajnik 433MHz" />
-	<przedmiot typ="komunikacja" ilosc="1" nazwa="RF odbiornik 433MHz" />
+	<przedmiot typ="akcesoria" ilosc="3" nazwa="płytka stykowa 830" />
 	<przedmiot typ="serwomechanizm" ilosc="2" nazwa="Tower Pro SG-5010" />
-	<przedmiot typ="układ scalony" ilosc="7" nazwa="ATmega8A-PU" />
-	<przedmiot typ="akcesoria" ilosc="5" nazwa="DIL28 podstawka wąska" />
-	<przedmiot typ="tranzystor" ilosc="10" nazwa="NPN BC547B" />
-	<przedmiot typ="akcesoria" ilosc="10" nazwa="10xlistwa kołkowo 8x1" />
-	<przedmiot typ="akcesoria" ilosc="2" nazwa="metalowy orczyk do serwa" />
-	<przedmiot typ="układ scalony" ilosc="5" nazwa="NAND 74LS00" />
-	<przedmiot typ="dioda IR" ilosc="18" nazwa="LD274" />
-	<przedmiot typ="akcesoria" ilosc="17" nazwa="TSAL6200" />
-	<przedmiot typ="dioda LED" ilosc="2" nazwa="RGB 3mm" />
-	<przedmiot typ="dioda LED" ilosc="17" nazwa="czerwona 5mm" />
-	<przedmiot typ="dioda LED" ilosc="15" nazwa="zielona 5mm" />
-	<przedmiot typ="dioda LED" ilosc="17" nazwa="żółta 5mm" />
 	<przedmiot typ="dioda Zenera" ilosc="5" nazwa="5v6" />
 	<przedmiot typ="dioda Zenera" ilosc="5" nazwa="3v3" />
 	<przedmiot typ="akcesoria" ilosc="1" nazwa="klawiatura membranowa" />
-	<przedmiot typ="układ scalony" ilosc="1" nazwa="ATmega16 16PU" />
-	<przedmiot typ="wyświetlacz" ilosc="1" nazwa="siedmiosegmentowy podwójny" />
 	<przedmiot typ="komunikacja" ilosc="1" nazwa="UART TTL RS232" />
 	<przedmiot typ="akcesoria" ilosc="1" nazwa="brzęczyk piezoelektryczny" />
-	<przedmiot typ="czujnik" ilosc="3" nazwa="TSOP 36KHz" />
-	<przedmiot typ="czujnik" ilosc="4" nazwa="TSOP 40KHz" />
-	<przedmiot typ="układ scalony" ilosc="2" nazwa="NE555" />
-	<przedmiot typ="kondensator SMD" ilosc="10" nazwa="22pF" />
-	<przedmiot typ="kondensator SMD" ilosc="10" nazwa="33pF" />
-	<przedmiot typ="kondensator SMD" ilosc="10" nazwa="47pF" />
-	<przedmiot typ="kondensator SMD" ilosc="10" nazwa="100pF" />
-	<przedmiot typ="kondensator SMD" ilosc="10" nazwa="220pF" />
-	<przedmiot typ="kondensator SMD" ilosc="10" nazwa="470pF" />
-	<przedmiot typ="kondensator SMD" ilosc="10" nazwa="1nF" />
-	<przedmiot typ="kondensator SMD" ilosc="10" nazwa="2.2nF" />
-	<przedmiot typ="kondensator SMD" ilosc="10" nazwa="3.3nF" />
-	<przedmiot typ="kondensator SMD" ilosc="10" nazwa="4.7nF" />
-	<przedmiot typ="kondensator SMD" ilosc="10" nazwa="10nF" />
-	<przedmiot typ="kondensator SMD" ilosc="10" nazwa="22nF" />
-	<przedmiot typ="kondensator SMD" ilosc="10" nazwa="33nF" />
-	<przedmiot typ="kondensator SMD" ilosc="10" nazwa="47nF" />
-	<przedmiot typ="kondensator SMD" ilosc="10" nazwa="100nF" />
-	<przedmiot typ="kondensator SMD" ilosc="10" nazwa="220nF" />
-	<przedmiot typ="kondensator SMD" ilosc="10" nazwa="330nF" />
-	<przedmiot typ="kondensator SMD" ilosc="10" nazwa="470nF" />
-	<przedmiot typ="kondensator SMD" ilosc="10" nazwa="1000nF" />
-	<przedmiot typ="rezystor THT" ilosc="10" nazwa="10R" />
-	<przedmiot typ="rezystor THT" ilosc="10" nazwa="15R" />
-	<przedmiot typ="rezystor THT" ilosc="10" nazwa="22R" />
-	<przedmiot typ="rezystor THT" ilosc="10" nazwa="33R" />
-	<przedmiot typ="rezystor THT" ilosc="10" nazwa="47R" />
-	<przedmiot typ="rezystor THT" ilosc="10" nazwa="68R" />
-	<przedmiot typ="rezystor THT" ilosc="10" nazwa="100R" />
-	<przedmiot typ="rezystor THT" ilosc="10" nazwa="150R" />
-	<przedmiot typ="rezystor THT" ilosc="10" nazwa="220R" />
-	<przedmiot typ="rezystor THT" ilosc="10" nazwa="330R" />
-	<przedmiot typ="rezystor THT" ilosc="10" nazwa="470R" />
-	<przedmiot typ="rezystor THT" ilosc="10" nazwa="680R" />
-	<przedmiot typ="rezystor THT" ilosc="10" nazwa="1K" />
-	<przedmiot typ="rezystor THT" ilosc="10" nazwa="1K5" />
-	<przedmiot typ="rezystor THT" ilosc="10" nazwa="2K2" />
-	<przedmiot typ="rezystor THT" ilosc="10" nazwa="3K3" />
-	<przedmiot typ="rezystor THT" ilosc="10" nazwa="4K7" />
-	<przedmiot typ="rezystor THT" ilosc="10" nazwa="6K8" />
-	<przedmiot typ="rezystor THT" ilosc="10" nazwa="10K" />
-	<przedmiot typ="rezystor THT" ilosc="10" nazwa="15K" />
-	<przedmiot typ="rezystor THT" ilosc="10" nazwa="22K" />
-	<przedmiot typ="rezystor THT" ilosc="10" nazwa="33K" />
-	<przedmiot typ="rezystor THT" ilosc="10" nazwa="47K" />
-	<przedmiot typ="rezystor THT" ilosc="10" nazwa="68K" />
-	<przedmiot typ="rezystor THT" ilosc="10" nazwa="100K" />
-	<przedmiot typ="rezystor THT" ilosc="10" nazwa="150K" />
-	<przedmiot typ="rezystor THT" ilosc="10" nazwa="220K" />
-	<przedmiot typ="rezystor THT" ilosc="10" nazwa="470K" />
-	<przedmiot typ="rezystor THT" ilosc="10" nazwa="680K" />
-	<przedmiot typ="rezystor THT" ilosc="10" nazwa="1M" />
-	<przedmiot typ="rezystor THT" ilosc="10" nazwa="2M2" />
-	<przedmiot typ="rezystor THT" ilosc="10" nazwa="10M" />
-	<przedmiot typ="rezystor SMD" ilosc="50" nazwa="10R" />
-	<przedmiot typ="rezystor SMD" ilosc="50" nazwa="22R" />
-	<przedmiot typ="rezystor SMD" ilosc="50" nazwa="47R" />
-	<przedmiot typ="rezystor SMD" ilosc="50" nazwa="100R" />
-	<przedmiot typ="rezystor SMD" ilosc="50" nazwa="220R" />
-	<przedmiot typ="rezystor SMD" ilosc="50" nazwa="1K" />
-	<przedmiot typ="rezystor SMD" ilosc="50" nazwa="2K2" />
-	<przedmiot typ="rezystor SMD" ilosc="50" nazwa="4K7" />
-	<przedmiot typ="rezystor SMD" ilosc="50" nazwa="10K" />
-	<przedmiot typ="rezystor SMD" ilosc="50" nazwa="22K" />
-	<przedmiot typ="rezystor SMD" ilosc="50" nazwa="100K" />
-	<przedmiot typ="rezystor SMD" ilosc="50" nazwa="220K" />
-	<przedmiot typ="rezystor SMD" ilosc="50" nazwa="470K" />
-	<przedmiot typ="rezystor SMD" ilosc="50" nazwa="1M" />
-	<przedmiot typ="tranzystor" ilosc="1" nazwa="NPN BD139 1.5A" />
-	<przedmiot typ="przycisk" ilosc="3" nazwa="1xTact Switch" />
-	<przedmiot typ="przycisk" ilosc="5" nazwa="3xDip Switch" />
-	<przedmiot typ="układ scalony" ilosc="1" nazwa="ATmega88PA" />
 	<przedmiot typ="czujnik" ilosc="1" nazwa="HC-SR04 ultradźwiękowy" />
-	<przedmiot typ="dioda IR" ilosc="18" nazwa="TSAL6200" />
 	<przedmiot typ="wyświetlacz" ilosc="1" nazwa="LCD niebieski 2x8" />
-	<przedmiot typ="kondensator SMD" ilosc="10" nazwa="10pF" />
 </Spis>

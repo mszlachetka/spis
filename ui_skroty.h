@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'skroty.ui'
 **
-** Created by: Qt User Interface Compiler version 5.3.0
+** Created by: Qt User Interface Compiler version 5.7.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -53,7 +53,7 @@ public:
 
     void retranslateUi(QDialog *skroty)
     {
-        skroty->setWindowTitle(QApplication::translate("skroty", "Dialog", 0));
+        skroty->setWindowTitle(QApplication::translate("skroty", "Dialog", Q_NULLPTR));
         textBrowser->setHtml(QApplication::translate("skroty", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -68,8 +68,8 @@ public:
                         "=\" font-size:10pt; font-style:italic;\">zapisz/zako\305\204cz</span></p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">HOME </span><span style=\" font-size:10pt; font-style:italic;\">poczat\304\231k listy</span></p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">END </span><span style=\" font-size:10pt; font-style:italic;\">koniec listy</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;\"><br /></p></body></html>", 0));
-        pushButton->setText(QApplication::translate("skroty", "OK", 0));
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;\"><br /></p></body></html>", Q_NULLPTR));
+        pushButton->setText(QApplication::translate("skroty", "OK", Q_NULLPTR));
     } // retranslateUi
 
 };
