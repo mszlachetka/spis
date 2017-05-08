@@ -83,6 +83,33 @@
        </item>
        <item>
         <property name="text">
+         <string>stabilizator</string>
+        </property>
+        <property name="icon">
+         <iconset resource="images/images.qrc">
+          <normaloff>:/images/stabilizator.jpg</normaloff>:/images/stabilizator.jpg</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>moduł</string>
+        </property>
+        <property name="icon">
+         <iconset resource="images/images.qrc">
+          <normaloff>:/images/moduł.jpg</normaloff>:/images/moduł.jpg</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>wejście użytkownika</string>
+        </property>
+        <property name="icon">
+         <iconset resource="images/images.qrc">
+          <normaloff>:/images/joystick.jpg</normaloff>:/images/joystick.jpg</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
          <string>czujnik</string>
         </property>
         <property name="icon">

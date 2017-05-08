@@ -1,12 +1,102 @@
 <?xml version="1.0"?>
 <Spis Tytul="ELEKTRONIKA">
 	<przedmiot typ="akcesoria" ilosc="3" nazwa="płytka stykowa 830" />
-	<przedmiot typ="serwomechanizm" ilosc="2" nazwa="Tower Pro SG-5010" />
+	<przedmiot typ="serwomechanizm" ilosc="3" nazwa="Tower Pro SG-5010" />
 	<przedmiot typ="dioda Zenera" ilosc="5" nazwa="5v6" />
 	<przedmiot typ="dioda Zenera" ilosc="5" nazwa="3v3" />
-	<przedmiot typ="akcesoria" ilosc="1" nazwa="klawiatura membranowa" />
 	<przedmiot typ="komunikacja" ilosc="1" nazwa="UART TTL RS232" />
-	<przedmiot typ="akcesoria" ilosc="1" nazwa="brzęczyk piezoelektryczny" />
-	<przedmiot typ="czujnik" ilosc="1" nazwa="HC-SR04 ultradźwiękowy" />
+	<przedmiot typ="akcesoria" ilosc="2" nazwa="brzęczyk piezoelektryczny" />
+	<przedmiot typ="czujnik" ilosc="2" nazwa="HC-SR04 ultradźwiękowy" />
 	<przedmiot typ="wyświetlacz" ilosc="1" nazwa="LCD niebieski 2x8" />
+	<przedmiot typ="czujnik" ilosc="2" nazwa="BME280 pogody" />
+	<przedmiot typ="wyświetlacz" ilosc="1" nazwa="LED matryca 8x8" />
+	<przedmiot typ="wejście użytkownika" ilosc="1" nazwa="PS2 joystick analogowy" />
+	<przedmiot typ="wejście użytkownika" ilosc="1" nazwa="klawiatura membranowa 16" />
+	<przedmiot typ="wejście użytkownika" ilosc="1" nazwa="klawiatura dotykowa 16" />
+	<przedmiot typ="wejście użytkownika" ilosc="1" nazwa="matryca przycisków 16" />
+	<przedmiot typ="akcesoria" ilosc="2" nazwa="złącze bateria-DC" />
+	<przedmiot typ="komunikacja" ilosc="1" nazwa="USB-TTL FTDI" />
+	<przedmiot typ="komunikacja" ilosc="1" nazwa="Bluetooth HAMA" />
+	<przedmiot typ="komunikacja" ilosc="1" nazwa="ESP8266-01 WiFi " />
+	<przedmiot typ="komunikacja" ilosc="1" nazwa="Bluetooth HC-05 " />
+	<przedmiot typ="moduł" ilosc="1" nazwa="DS3231 I2C RTC" />
+	<przedmiot typ="czujnik" ilosc="1" nazwa="DHT11 ciśnienia" />
+	<przedmiot typ="stabilizator" ilosc="1" nazwa="LM1117T 3,3V" />
+	<przedmiot typ="akcesoria" ilosc="2" nazwa="bateria 9V" />
+	<przedmiot typ="akcesoria" ilosc="3" nazwa="płytka stykowa 830" />
+	<przedmiot typ="akcesoria" ilosc="1" nazwa="płytka stykowa 180" />
+	<przedmiot typ="akcesoria" ilosc="1" nazwa="powerbank 5V 2,1A" />
+	<przedmiot typ="silnik DC" ilosc="2" nazwa="xerox 5V" />
+	<przedmiot typ="akcesoria" ilosc="1" nazwa="multimetr" />
+	<przedmiot typ="dioda LED" ilosc="1" nazwa="taśma WS1220B 60/m" />
+	<przedmiot typ="dioda LED" ilosc="1" nazwa="taśma WS1220B 30/m" />
+	<przedmiot typ="komunikacja" ilosc="4" nazwa="karta RFID" />
+	<przedmiot typ="komunikacja" ilosc="1" nazwa="brelok RFID" />
+	<przedmiot typ="akcesoria" ilosc="170" nazwa="trytytki 80x2,5mm" />
+	<przedmiot typ="moduł" ilosc="1" nazwa="ISD1820 rejestrator dźwięku" />
+	<przedmiot typ="przycisk" ilosc="2" nazwa="tact switch" />
+	<przedmiot typ="czujnik" ilosc="4" nazwa="kontaktron" />
+	<przedmiot typ="akcesoria" ilosc="5" nazwa="wtyk 4 pin 2,5mm" />
+	<przedmiot typ="układ scalony" ilosc="3" nazwa="EEPROM 24C512" />
+	<przedmiot typ="akcesoria" ilosc="10" nazwa="220 Ohm THT" />
+	<przedmiot typ="czujnik" ilosc="1" nazwa="HC-SR501 ruch" />
+	<przedmiot typ="czujnik" ilosc="1" nazwa="MQ9 gaz" />
+	<przedmiot typ="czujnik" ilosc="1" nazwa="FC-37 deszcz/śnieg" />
+	<przedmiot typ="przycisk" ilosc="1" nazwa="dotykowy" />
+	<przedmiot typ="moduł" ilosc="1" nazwa="przekaźnik 5V" />
+	<przedmiot typ="czujnik" ilosc="1" nazwa="podczerwień płomień" />
+	<przedmiot typ="przycisk" ilosc="5" nazwa="dip switch 2" />
+	<przedmiot typ="komunikacja" ilosc="1" nazwa="odbiornik IR" />
+	<przedmiot typ="czujnik" ilosc="1" nazwa="FC-04 hałas" />
+	<przedmiot typ="komunikacja" ilosc="1" nazwa="pilot IR" />
+	<przedmiot typ="moduł" ilosc="1" nazwa="programator ISP" />
+	<przedmiot typ="akcesoria" ilosc="1" nazwa="ISP 6-pin adapter" />
+	<przedmiot typ="serwomechanizm" ilosc="2" nazwa="Tower Pro MG-90S" />
+	<przedmiot typ="rezystor" ilosc="8" nazwa="4,2 kOhm THT" />
+	<przedmiot typ="czujnik" ilosc="1" nazwa="FC-22 alkohol" />
+	<przedmiot typ="rezystor" ilosc="6" nazwa="6,8 kOhm THT" />
+	<przedmiot typ="wyświetlacz" ilosc="1" nazwa="TM1637 4-digit LED" />
+	<przedmiot typ="akcesoria" ilosc="1" nazwa="szczypce" />
+	<przedmiot typ="moduł" ilosc="1" nazwa="arduino prototyping shield" />
+	<przedmiot typ="czujnik" ilosc="1" nazwa="DT11 ciśnienie" />
+	<przedmiot typ="komunikacja" ilosc="1" nazwa="nadajnik laserowy" />
+	<przedmiot typ="dioda IR" ilosc="5" nazwa="TSAL6200" />
+	<przedmiot typ="dioda LED" ilosc="10" nazwa="zielona 3mm" />
+	<przedmiot typ="silnik DC" ilosc="2" nazwa="pompka 600l/h 3V-6V" />
+	<przedmiot typ="mikrokontroler" ilosc="2" nazwa="Attiny2313A" />
+	<przedmiot typ="akcesoria" ilosc="15" nazwa="trytytki 140x2,5mm" />
+	<przedmiot typ="potencjometr" ilosc="2" nazwa="10 kOhm" />
+	<przedmiot typ="potencjometr" ilosc="2" nazwa="1 kOhm" />
+	<przedmiot typ="dioda LED" ilosc="7" nazwa="czerwona 3mm" />
+	<przedmiot typ="układ scalony" ilosc="2" nazwa="LM2930 mostek H" />
+	<przedmiot typ="stabilizator" ilosc="2" nazwa="LF33CV 3,3V LDO THT" />
+	<przedmiot typ="akcesoria" ilosc="2" nazwa="wtyk 3 pin 2,5mm" />
+	<przedmiot typ="rezystor" ilosc="10" nazwa="10 kOhm THT" />
+	<przedmiot typ="rezystor" ilosc="10" nazwa="220 Ohm" />
+	<przedmiot typ="akcesoria" ilosc="4" nazwa="terminal block 2 pin 2,5mm" />
+	<przedmiot typ="silnik krokowy" ilosc="1" nazwa="28BYJ-48 5V" />
+	<przedmiot typ="moduł" ilosc="1" nazwa="ULN2003 silnik krokowy" />
+	<przedmiot typ="czujnik" ilosc="1" nazwa="YL-69 wilgotność" />
+	<przedmiot typ="kondensator" ilosc="7" nazwa="470uF 50V" />
+	<przedmiot typ="kondensator" ilosc="8" nazwa="33uF 100V" />
+	<przedmiot typ="wyświetlacz" ilosc="1" nazwa="7 segment LED" />
+	<przedmiot typ="silnik DC" ilosc="1" nazwa="5V DC" />
+	<przedmiot typ="akcesoria" ilosc="3" nazwa="magnes przylepny" />
+	<przedmiot typ="dioda LED" ilosc="5" nazwa="biała 5mm" />
+	<przedmiot typ="dioda LED" ilosc="5" nazwa="czerwona 5mm" />
+	<przedmiot typ="dioda LED" ilosc="5" nazwa="zielona 5mm" />
+	<przedmiot typ="dioda LED" ilosc="5" nazwa="niebieska 5mm" />
+	<przedmiot typ="dioda LED" ilosc="5" nazwa="żółta 5mm" />
+	<przedmiot typ="dioda LED" ilosc="5" nazwa="RGB 5mm" />
+	<przedmiot typ="układ scalony" ilosc="1" nazwa="74HC595 rejestr przesuwny" />
+	<przedmiot typ="przycisk" ilosc="2" nazwa="tact switch duży" />
+	<przedmiot typ="czujnik" ilosc="1" nazwa="TCS3200D kolor" />
+	<przedmiot typ="tranzystor" ilosc="9" nazwa="BC547B 0,1A NPN" />
+	<przedmiot typ="czujnik" ilosc="1" nazwa="GY-61 akcelerometr" />
+	<przedmiot typ="czujnik" ilosc="1" nazwa="GY-521 żyroskop" />
+	<przedmiot typ="czujnik" ilosc="1" nazwa="GY-283 HMC5883L magnetyczny" />
+	<przedmiot typ="czujnik" ilosc="1" nazwa="RFID-RC522 czytnik" />
+	<przedmiot typ="czujnik" ilosc="3" nazwa="TCRT5000 optyczny odbiciowy" />
+	<przedmiot typ="moduł" ilosc="1" nazwa="czytnik kard microSD" />
+	<przedmiot typ="moduł" ilosc="2" nazwa="konverter poziomów logicznych 3,3V-5V I2C" />
 </Spis>

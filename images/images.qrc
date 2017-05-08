@@ -21,5 +21,8 @@
         <file>mikrokontroler.jpg</file>
         <file>silnik_dc.jpg</file>
         <file>silnik_krokowy.jpg</file>
+        <file>joystick.jpg</file>
+        <file>moduł.jpg</file>
+        <file>stabilizator.jpg</file>
     </qresource>
 </RCC>
